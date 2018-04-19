@@ -3,6 +3,7 @@
 <head>
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
   {{ .Hugo.Generator }}
 
   <!-- Enable responsiveness on mobile devices-->
@@ -15,18 +16,19 @@
   {{- end }}
 
   <!-- CSS -->
-  <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/poole.css">
-  <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/hyde.css">
-  {{ partial "head_fonts.html" . }}
-
-  <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="/favicon.png">
+  <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/print.min.css" media="print">
+  <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/poole.min.css">
+  <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/syntax.min.css">
+  <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/hyde.min.css">
+  <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/fonts.min.css">
 
   <!-- RSS -->
   <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 
   {{ partial "hook_head_end.html" . }}
+  
+  <!-- Highlight -->
+  <link rel="stylesheet" href="{{"css/github.css" | absURL}}" rel="stylesheet" id="theme-stylesheet">
+  <script src="{{ "js/highlight.pack.js" | absURL }}"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
