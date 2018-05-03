@@ -125,6 +125,10 @@ ul, ol, dl {
   margin-bottom: 1rem;
 }
 
+ul.posts {
+  font-family: Charter, Merriweather, serif;
+}
+
 dt {
   font-weight: bold;
 }
