@@ -30,7 +30,7 @@
 
 .sidebar a {
   font-family: Kievit, "PT Sans", sans-serif;
-  color: #fff
+  color: #fff;
 }
 
 .sidebar-about h1 {
@@ -174,4 +174,5 @@ a.sidebar-nav-item:hover, a.sidebar-nav-item:focus {
 
 a {
   color: #485667
+  font-weight: bold;
 }
