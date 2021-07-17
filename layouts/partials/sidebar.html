@@ -13,29 +13,29 @@
         <li><a href="{{.URL}}"> {{ .Name }} </a></li>
       {{- end }}
     </ul>
-    
+
       <ul style="padding: 0;list-style-type: none;display: flex;justify-content: space-between;">
         <li>
+          <a target="_blank" href="https://pacha.dev/">
+            About
+          </a>
+        </li>
+        
+        <li>
           <a target="_blank" href="mailto:mvargas@dcc.uchile.cl">
-            <i class="fas fa-envelope"></i>
+            Email
           </a>
         </li>
 
         <li>
-          <a target="_blank" href="https://pacha.dev">
-            <i class="fas fa-home"></i>
-          </a>
-        </li>
-     
-        <li> 
           <a target="_blank" href="https://github.com/pachadotdev">
-            <i class="fab fa-github"></i>
+            GitHub
           </a>
         </li>
-      
+
         <li>
           <a target="_blank" href="https://twitter.com/pachadotdev">
-            <i class="fab fa-twitter"></i>
+            Twitter
           </a>
         </li>
       </ul>
@@ -43,7 +43,7 @@
     <p style="font-family: Kievit, 'PT Sans', sans-serif;">
       This blog is listed on <a href="https://r-bloggers.com">R-Bloggers</a>.
     </p>
-    
+
     <p style="font-family: Kievit, 'PT Sans', sans-serif;">{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{ now.Format "2006"}}. All rights reserved. {{end}}</p>
   </div>
 </div>
